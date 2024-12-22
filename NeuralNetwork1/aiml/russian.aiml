@@ -1,0 +1,3451 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ACQUAINTANCE -->
+
+<aiml>
+	<category>
+		<pattern>_ меня зовут *</pattern>
+		<template>
+			<srai>
+				меня зовут <star/>
+			</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>привет *</pattern>
+		<template>
+			<srai>
+				меня зовут <star/>
+			</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>меня зовут *</pattern>
+		<template>
+			<think>
+				<set name="user-name">
+					<star />
+				</set>
+			</think>
+		</template>
+	</category>
+
+	<!-- ПРИВЕТСТВИЕ -->
+
+	<category>
+		<pattern>привет</pattern>
+		<template>
+			<random>
+				<li>
+					Привет, <get name="user-name"/>!
+				</li>
+				<li>
+					Приветствую, <get name="user-name"/>!
+				</li>
+				<li>
+					Здравствуйте, <get name="user-name"/>!
+				</li>
+				<li>
+					Доброго времени суток, <get name="user-name"/>!
+				</li>
+			</random>
+			Если хотите узнать о том, что я умею, просто спросите меня!
+		</template>
+	</category>
+
+	<category>
+		<pattern>/start</pattern>
+		<template>
+			<srai>привет</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>привет *</pattern>
+		<template>
+			<srai>привет</srai>
+		</template>
+	</category>
+
+
+	<category>
+		<pattern>start</pattern>
+		<template>
+			<srai>привет</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>hello</pattern>
+		<template>
+			<srai>привет</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>здравствуйте</pattern>
+		<template>
+			<srai>привет</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>здарова</pattern>
+		<template>
+			<srai>привет</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ПОКА</pattern>
+		<template>
+			До свидания! <get name="username"/>
+		</template>
+	</category>
+
+	<category>
+		<pattern>
+			ВСЕГО ДОБРОГО
+		</pattern>
+		<template>
+			<srai>ПОКА</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ДО СВИДАНИЯ</pattern>
+		<template>
+			<srai>ПОКА</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>пока *</pattern>
+		<template>
+			<srai>ПОКА</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* пока</pattern>
+		<template>
+			<srai>ПОКА</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* пока *</pattern>
+		<template>
+			<srai>ПОКА</srai>
+		</template>
+	</category>
+
+	<!-- ЧТО УМЕЕТ БОТ -->
+
+	<category>
+		<pattern>кто ты</pattern>
+		<template>
+			Я бот, специализирующийся на распознавании символов, связанных с уходом за одеждой. Вот категории, с которыми я смогу вам помочь:
+			- Машинная стирка при 30 градусах
+			- Аккуратная стирка при 30 градусах
+			- Можно использовать хлор
+			- Глажка до температуры 110 градусов
+			- Глажка запрещена
+			- Сушка в машинке разрешена
+			- Сушка в духовке разрешена
+			- Сушка в стиральной машине запрещена
+			- Сухой распределитель
+			- Стирка в машине запрещена
+			Я могу распознать символ по фото и рассказать интересные факты,связанные с каждым знаком.
+		</template>
+	</category>
+
+	<category>
+		<pattern>РАССКАЖИ О СЕБЕ</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>РАССКАЖИ О СЕБЕ *</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* РАССКАЖИ О СЕБЕ</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* РАССКАЖИ О СЕБЕ *</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ты кто</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>что умеешь</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* что умеешь</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>что * умеешь</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* что * умеешь</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* что-то умеешь</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>что-то умеешь</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>что знаешь</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* что * знаешь</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>что * знаешь *</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* что знаешь *</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* что * знаешь *</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* что знаешь</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>что * знаешь</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>что знаешь *</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+
+	<category>
+		<pattern>что ты умеешь</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* какие символы знаешь *</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>какие символы знаешь *</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* какие символы знаешь</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* символы *</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>символы</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>символы *</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* символы </pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* символах *</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+
+	<category>
+		<pattern>символах *</pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* символах </pattern>
+		<template>
+			<srai>кто ты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>о чем говорим</pattern>
+		<template>
+			Текущая тема: <get name="topic"/>
+		</template>
+	</category>
+
+	<category>
+		<pattern>о чем * говориШЬ *</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* о чем * говориШЬ *</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* о чем говориШЬ *</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* о чем * говориШЬ</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>о чем говориШЬ *</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>о чем * говориШЬ</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>о чем * говорили *</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>о чем говорили *</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>о чем * говорили</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* о чем говорили *</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* о чем * говорили *</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* о чем * говорили</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>о чем * говорим *</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>о чем говорим *</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>о чем * говорим</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* о чем говорим *</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* о чем * говорим *</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* о чем * говорим</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>о чем * рассказываешь *</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* о чем * рассказываешь *</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* о чем * рассказываешь</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* о чем рассказываешь *</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* о чем рассказываешь</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>о чем рассказываешь *</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>о чем * рассказываешь</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>что * рассказываешь *</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>что рассказываешь *</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>что * рассказываешь</pattern>
+		<template>
+			<srai>о чем говорим</srai>
+		</template>
+	</category>
+
+
+	<!-- ВОПРОСЫ ПРО "Машинная стирка при 30 градусах" -->
+	<category>
+		<pattern>Машинная стирка при 30 градусах</pattern>
+		<template>
+			На этом символе изображен таз с водой, внутри цифра 30
+			<random>
+				<li>стирка при 30 °C потребляет гораздо меньше энергии, чем при высоких температурах, и является более экологичной альтернативой, особенно если используется жидкое моющее средство, эффективное при низких температурах.</li>
+				<li>
+					символ машинной стирки при 30 градусах, изображающий таз с водой и цифрой "30", является международным стандартом, установленным Международной организацией по стандартизации (ISO). Однако в некоторых странах, например, в Японии или Корее, вместо чисел могут использовать символы или иероглифы, означающие "холодная вода" или "деликатная стирка". Это отражает локальные культурные и языковые особенности!
+				</li>
+			</random>
+			<think>
+				<set name="topic">Машинная стирка при 30 градусах</set>
+			</think>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* Машинная стирка при 30 градусах *</pattern>
+		<template>
+			<srai>Машинная стирка при 30 градусах</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* Машинная стирка при 30 градусах </pattern>
+		<template>
+			<srai>Машинная стирка при 30 градусах</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern> Машинная стирка при 30 градусах *</pattern>
+		<template>
+			<srai>Машинная стирка при 30 градусах</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Машинная стирка</pattern>
+		<template>
+			<srai>Машинная стирка при 30 градусах</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* машинная стирка</pattern>
+		<template>
+			<srai>Машинная стирка при 30 градусах</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* машинная стирка *</pattern>
+		<template>
+			<srai>Машинная стирка при 30 градусах</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>машинная стирка *</pattern>
+		<template>
+			<srai>Машинная стирка при 30 градусах</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern> *машинная стирка *</pattern>
+		<template>
+			<srai>Машинная стирка при 30 градусах</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* обычная стирка *</pattern>
+		<template>
+			<srai>Машинная стирка при 30 градусах</srai>
+		</template>
+	</category>
+
+	<topic name="Машинная стирка при 30 градусах">
+		<category>
+			<pattern>ЕЩЕ</pattern>
+			<template>
+				<random>
+					<li> Полезный совет: при стирке при 30 градусах убедитесь, что вы используете моющее средство, специально разработанное для низких температур. Такие средства эффективно удаляют загрязнения даже в прохладной воде.</li>
+					<li> Если одежда сильно загрязнена, перед стиркой обработайте пятна пятновыводителем или замочите их в теплой воде с небольшим количеством моющего средства.</li>
+				</random>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Машинная стирка при 30 градусах">
+		<category>
+			<pattern>* ЕЩЕ</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Машинная стирка при 30 градусах">
+		<category>
+			<pattern> ЕЩЕ *</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Машинная стирка при 30 градусах">
+		<category>
+			<pattern>* ЕЩЕ *</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Машинная стирка при 30 градусах">
+		<category>
+			<pattern>опиши</pattern>
+			<template>
+				<srai>Машинная стирка при 30 градусах</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Машинная стирка при 30 градусах">
+		<category>
+			<pattern>опиши *</pattern>
+			<template>
+				<srai>Машинная стирка при 30 градусах</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Машинная стирка при 30 градусах">
+		<category>
+			<pattern>* опиши</pattern>
+			<template>
+				<srai>Машинная стирка при 30 градусах</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Машинная стирка при 30 градусах">
+		<category>
+			<pattern>* опиши *</pattern>
+			<template>
+				<srai>Машинная стирка при 30 градусах</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Машинная стирка при 30 градусах">
+		<category>
+			<pattern>как выглядит</pattern>
+			<template>
+				<srai>Машинная стирка при 30 градусах</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Машинная стирка при 30 градусах">
+		<category>
+			<pattern>как выглядит *</pattern>
+			<template>
+				<srai>Машинная стирка при 30 градусах</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Машинная стирка при 30 градусах">
+		<category>
+			<pattern>* как выглядит</pattern>
+			<template>
+				<srai>Машинная стирка при 30 градусах</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Машинная стирка при 30 градусах">
+		<category>
+			<pattern>* как выглядит *</pattern>
+			<template>
+				<srai>Машинная стирка при 30 градусах</srai>
+			</template>
+		</category>
+	</topic>
+
+
+	<!-- ВОПРОСЫ ПРО "можно использовать хлор" -->
+	<category>
+		<pattern>можно использовать хлор</pattern>
+		<template>
+			Этот символ выглядит как пустой треугольник.
+			<random>
+				<li>Символ означает, что одежду можно отбеливать. Этот знак позволяет использовать отбеливатели для поддержания яркости цветов и белоснежности вашей одежды. Интересный факт: отбеливание помогает устранить пятна и освежить ткани.</li>
+				<li>
+					Если на бирке вашей одежды есть символ △, это означает, что отбеливание допускается. Следуйте рекомендациям производителя для наилучших результатов и сохранения качества тканей.
+				</li>
+			</random>
+			<think>
+				<set name="topic">можно использовать хлор</set>
+			</think>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* можно использовать хлор *</pattern>
+		<template>
+			<srai>можно использовать хлор</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* можно использовать хлор</pattern>
+		<template>
+			<srai>можно использовать хлор</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>можно использовать хлор *</pattern>
+		<template>
+			<srai>можно использовать хлор</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern> *отбеливать можно *</pattern>
+		<template>
+			<srai>можно использовать хлор</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern> *отбеливать можно </pattern>
+		<template>
+			<srai>можно использовать хлор</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern> отбеливать можно *</pattern>
+		<template>
+			<srai>можно использовать хлор</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>можно отбелить *</pattern>
+		<template>
+			<srai>можно использовать хлор</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* можно отбелить *</pattern>
+		<template>
+			<srai>можно использовать хлор</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* можно отбелить</pattern>
+		<template>
+			<srai>можно использовать хлор</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>можно отбелить</pattern>
+		<template>
+			<srai>можно использовать хлор</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* отбеливание разрешено *</pattern>
+		<template>
+			<srai>можно использовать хлор</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* отбеливание разрешено </pattern>
+		<template>
+			<srai>можно использовать хлор</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern> отбеливание разрешено *</pattern>
+		<template>
+			<srai>можно использовать хлор</srai>
+		</template>
+	</category>
+
+
+	<topic name="можно использовать хлор">
+		<category>
+			<pattern>опиши</pattern>
+			<template>
+				<srai>можно использовать хлор</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="можно использовать хлор">
+		<category>
+			<pattern>опиши *</pattern>
+			<template>
+				<srai>можно использовать хлор</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="можно использовать хлор">
+		<category>
+			<pattern>* опиши</pattern>
+			<template>
+				<srai>можно использовать хлор</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="можно использовать хлор">
+		<category>
+			<pattern>* опиши *</pattern>
+			<template>
+				<srai>можно использовать хлор</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="можно использовать хлор">
+		<category>
+			<pattern>как выглядит</pattern>
+			<template>
+				<srai>можно использовать хлор</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="можно использовать хлор">
+		<category>
+			<pattern>как выглядит *</pattern>
+			<template>
+				<srai>можно использовать хлор</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="можно использовать хлор">
+		<category>
+			<pattern>* как выглядит</pattern>
+			<template>
+				<srai>можно использовать хлор</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="можно использовать хлор">
+		<category>
+			<pattern>* как выглядит *</pattern>
+			<template>
+				<srai>можно использовать хлор</srai>
+			</template>
+		</category>
+	</topic>
+
+
+	<topic name="можно использовать хлор">
+		<category>
+			<pattern>ЕЩЕ</pattern>
+			<template>
+				<random>
+					<li>Не смешивайте с другими средствами: Никогда не смешивайте хлорсодержащий отбеливатель с аммиаком, уксусом или другими чистящими средствами. Это может вызвать выделение токсичного газа, опасного для дыхания.</li>
+					<li>Используйте холодную воду: При стирке с хлорным отбеливателем используйте холодную или прохладную воду, чтобы уменьшить риск повреждения тканей и сохранить их прочность.</li>
+				</random>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="можно использовать хлор">
+		<category>
+			<pattern>* ЕЩЕ</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="можно использовать хлор">
+		<category>
+			<pattern> ЕЩЕ *</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="можно использовать хлор">
+		<category>
+			<pattern>* ЕЩЕ *</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+	</topic>
+
+
+	<!-- ВОПРОСЫ ПРО "АККУРАТНАЯ СТИРКА ПРИ 30 ГРАДУСАХ" -->
+	<category>
+		<pattern>Аккуратная стирка при 30 градусах</pattern>
+		<template>
+			Символ для "аккуратной стирки" при 30 °C изображает таз с водой, под которым добавлена одна горизонтальная линия. Они указывают на особо бережный режим стирки.
+			<random>
+				<li> Режим для деликатных тканей: Этот символ используется для обозначения вещей из деликатных тканей, таких как шелк, кружево, или тонкая синтетика, требующих минимальной механической обработки.</li>
+				<li>
+					Уменьшенные обороты отжима: При такой стирке стиральная машина уменьшает интенсивность вращения барабана и снижает скорость отжима, чтобы избежать деформации ткани.
+				</li>
+			</random>
+			<think>
+				<set name="topic">Аккуратная стирка при 30 градусах</set>
+			</think>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* аккуратная стирка при 30 градусах *</pattern>
+		<template>
+			<srai>Аккуратная стирка при 30 градусах</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* аккуратная стирка при 30 градусах</pattern>
+		<template>
+			<srai>Аккуратная стирка при 30 градусах</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Аккуратная стирка при 30 градусах *</pattern>
+		<template>
+			<srai>Аккуратная стирка при 30 градусах</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* аккуратная стирка *</pattern>
+		<template>
+			<srai>Аккуратная стирка при 30 градусах</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* аккуратная стирка </pattern>
+		<template>
+			<srai>Аккуратная стирка при 30 градусах</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>аккуратная стирка </pattern>
+		<template>
+			<srai>Аккуратная стирка при 30 градусах</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern> аккуратная стирка *</pattern>
+		<template>
+			<srai>Аккуратная стирка при 30 градусах</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>аккуратная стирка *</pattern>
+		<template>
+			<srai>Аккуратная стирка при 30 градусах</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* аккуратная стирка</pattern>
+		<template>
+			<srai>Аккуратная стирка при 30 градусах</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* аккуратная стирка *</pattern>
+		<template>
+			<srai>Аккуратная стирка при 30 градусах</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>бережная стирка</pattern>
+		<template>
+			<srai>Аккуратная стирка при 30 градусах</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* бережная стирка *</pattern>
+		<template>
+			<srai>Аккуратная стирка при 30 градусах</srai>
+		</template>
+	</category>
+
+	<topic name="Аккуратная стирка при 30 градусах">
+		<category>
+			<pattern>опиши</pattern>
+			<template>
+				<srai>Аккуратная стирка при 30 градусах</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Аккуратная стирка при 30 градусах">
+		<category>
+			<pattern>опиши *</pattern>
+			<template>
+				<srai>Аккуратная стирка при 30 градусах</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Аккуратная стирка при 30 градусах">
+		<category>
+			<pattern>* опиши</pattern>
+			<template>
+				<srai>Аккуратная стирка при 30 градусах</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Аккуратная стирка при 30 градусах">
+		<category>
+			<pattern>* опиши *</pattern>
+			<template>
+				<srai>Аккуратная стирка при 30 градусах</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Аккуратная стирка при 30 градусах">
+		<category>
+			<pattern>как выглядит</pattern>
+			<template>
+				<srai>Аккуратная стирка при 30 градусах</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Аккуратная стирка при 30 градусах">
+		<category>
+			<pattern>как выглядит *</pattern>
+			<template>
+				<srai>Аккуратная стирка при 30 градусах</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Аккуратная стирка при 30 градусах">
+		<category>
+			<pattern>* как выглядит</pattern>
+			<template>
+				<srai>Аккуратная стирка при 30 градусах</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Аккуратная стирка при 30 градусах">
+		<category>
+			<pattern>* как выглядит *</pattern>
+			<template>
+				<srai>Аккуратная стирка при 30 градусах</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Аккуратная стирка при 30 градусах">
+		<category>
+			<pattern>ЕЩЕ</pattern>
+			<template>
+				<random>
+					<li> Используйте специальное моющее средство: Для деликатных тканей лучше применять жидкие моющие средства, которые растворяются быстрее и не оставляют следов на ткани.</li>
+					<li> Стирайте в мешке для белья: Для дополнительной защиты используйте мешок для стирки. Это особенно полезно для тонкого нижнего белья или кружевных изделий.</li>
+				</random>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Аккуратная стирка при 30 градусах">
+		<category>
+			<pattern>* ЕЩЕ</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Аккуратная стирка при 30 градусах">
+		<category>
+			<pattern> ЕЩЕ *</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Аккуратная стирка при 30 градусах">
+		<category>
+			<pattern>* ЕЩЕ *</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+	</topic>
+
+
+
+	<!-- ВОПРОСЫ ПРО "сушка в машинке разрешена" -->
+	<category>
+		<pattern>сушка в машинке разрешена</pattern>
+		<template>
+			Этот символ выглядит как круг в квадрате.
+			<random>
+				<li>Квадрат с кругом внутри: Этот символ указывает, что ткань можно сушить в барабанной сушилке. Дополнительные точки или полосы внутри круга уточняют режим сушки (например, низкая или высокая температура).</li>
+				<li>Сохранение формы: Сушка в машинке помогает некоторым тканям сохранять форму, а также делает их более мягкими, но при этом может вызывать усадку у натуральных волокон, таких как хлопок или шерсть.</li>
+			</random>
+			<think>
+				<set name="topic">сушка в машинке разрешена</set>
+			</think>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* сушка в машинке разрешена *</pattern>
+		<template>
+			<srai>сушка в машинке разрешена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* сушка в машинке разрешена </pattern>
+		<template>
+			<srai>сушка в машинке разрешена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>сушка в машинке разрешена *</pattern>
+		<template>
+			<srai>сушка в машинке разрешена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* машинная сушка разрешена *</pattern>
+		<template>
+			<srai>сушка в машинке разрешена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* машинная сушка разрешена </pattern>
+		<template>
+			<srai>сушка в машинке разрешена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>машинная сушка разрешена *</pattern>
+		<template>
+			<srai>сушка в машинке разрешена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>машинная сушка разрешена</pattern>
+		<template>
+			<srai>сушка в машинке разрешена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* сушка в машине *</pattern>
+		<template>
+			<srai>сушка в машинке разрешена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* сушка в машине </pattern>
+		<template>
+			<srai>сушка в машинке разрешена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern> сушка в машине *</pattern>
+		<template>
+			<srai>сушка в машинке разрешена</srai>
+		</template>
+	</category>
+
+	<topic name="сушка в машинке разрешена">
+		<category>
+			<pattern>опиши</pattern>
+			<template>
+				<srai>сушка в машинке разрешена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в машинке разрешена">
+		<category>
+			<pattern>опиши *</pattern>
+			<template>
+				<srai>сушка в машинке разрешена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в машинке разрешена">
+		<category>
+			<pattern>* опиши</pattern>
+			<template>
+				<srai>сушка в машинке разрешена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в машинке разрешена">
+		<category>
+			<pattern>* опиши *</pattern>
+			<template>
+				<srai>сушка в машинке разрешена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в машинке разрешена">
+		<category>
+			<pattern>как выглядит</pattern>
+			<template>
+				<srai>сушка в машинке разрешена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в машинке разрешена">
+		<category>
+			<pattern>как выглядит *</pattern>
+			<template>
+				<srai>сушка в машинке разрешена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в машинке разрешена">
+		<category>
+			<pattern>* как выглядит</pattern>
+			<template>
+				<srai>сушка в машинке разрешена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в машинке разрешена">
+		<category>
+			<pattern>* как выглядит *</pattern>
+			<template>
+				<srai>сушка в машинке разрешена</srai>
+			</template>
+		</category>
+	</topic>
+
+
+
+	<topic name="сушка в машинке разрешена">
+		<category>
+			<pattern>ЕЩЕ</pattern>
+			<template>
+				<random>
+					<li>Проверяйте ярлыки: Всегда проверяйте символы ухода на одежде, чтобы убедиться, что материал подходит для машинной сушки, и выберите правильный температурный режим.</li>
+					<li>Не перегружайте сушилку: Перегруженная сушилка снижает эффективность работы, увеличивает время сушки и может привести к образованию складок.</li>
+					<li>
+						Используйте антистатические салфетки: Они уменьшают статическое электричество и помогают одежде оставаться мягкой и свежей после сушки.
+					</li>
+				</random>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в машинке разрешена">
+		<category>
+			<pattern>* ЕЩЕ</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в машинке разрешена">
+		<category>
+			<pattern>ЕЩЕ *</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в машинке разрешена">
+		<category>
+			<pattern>* ЕЩЕ *</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+	</topic>
+
+
+	<!-- ВОПРОСЫ ПРО "СУШКА В ДУХОВКЕ РАЗРЕШЕНА" -->
+	<category>
+		<pattern>сушка в духовке разрешена</pattern>
+		<template>
+			Этот символ выглядит как квадрат с кругом и точкой внутри.
+			<random>
+				<li>Символ с одной точкой внутри круга: Этот знак обозначает, что одежду можно сушить в барабанной сушилке, но только при низкой температуре, чтобы избежать повреждения ткани.</li>
+				<li>Этот символ на бирке означает, что такой метод подходит для деликатных тканей: Такие материалы, как синтетика, микрофибра, или ткани с водоотталкивающими покрытиями, требуют бережного обращения и могут повреждаться при высоких температурах. </li>
+			</random>
+			<think>
+				<set name="topic">сушка в духовке разрешена</set>
+			</think>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* сушка в духовке разрешена *</pattern>
+		<template>
+			<srai>сушка в духовке разрешена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* сушка в духовке разрешена </pattern>
+		<template>
+			<srai>сушка в духовке разрешена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>сушка в духовке разрешена *</pattern>
+		<template>
+			<srai>сушка в духовке разрешена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* бережная сушка *</pattern>
+		<template>
+			<srai>сушка в духовке разрешена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* бережная сушка </pattern>
+		<template>
+			<srai>сушка в духовке разрешена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>бережная сушка *</pattern>
+		<template>
+			<srai>сушка в духовке разрешена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* бережная сушка *</pattern>
+		<template>
+			<srai>сушка в духовке разрешена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* бережная сушка </pattern>
+		<template>
+			<srai>сушка в духовке разрешена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>бережная сушка *</pattern>
+		<template>
+			<srai>сушка в духовке разрешена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>бережная сушка</pattern>
+		<template>
+			<srai>сушка в духовке разрешена</srai>
+		</template>
+	</category>
+
+	<topic name="сушка в духовке разрешена">
+		<category>
+			<pattern>опиши</pattern>
+			<template>
+				<srai>сушка в духовке разрешена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в духовке разрешена">
+		<category>
+			<pattern>опиши *</pattern>
+			<template>
+				<srai>сушка в духовке разрешена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в духовке разрешена">
+		<category>
+			<pattern>* опиши</pattern>
+			<template>
+				<srai>сушка в духовке разрешена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в духовке разрешена">
+		<category>
+			<pattern>* опиши *</pattern>
+			<template>
+				<srai>сушка в духовке разрешена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в духовке разрешена">
+		<category>
+			<pattern>как выглядит</pattern>
+			<template>
+				<srai>сушка в духовке разрешена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в духовке разрешена">
+		<category>
+			<pattern>как выглядит *</pattern>
+			<template>
+				<srai>сушка в духовке разрешена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в духовке разрешена">
+		<category>
+			<pattern>* как выглядит</pattern>
+			<template>
+				<srai>сушка в духовке разрешена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в духовке разрешена">
+		<category>
+			<pattern>* как выглядит *</pattern>
+			<template>
+				<srai>сушка в духовке разрешена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в духовке разрешена">
+		<category>
+			<pattern>ЕЩЕ</pattern>
+			<template>
+				<random>
+					<li>Выбирайте соответствующий режим: Убедитесь, что в сушильной машине установлен режим "Деликатная сушка" или аналогичный, предназначенный для работы при низкой температуре.</li>
+					<li>Не перегружайте барабан: Дайте вещам достаточно места, чтобы они могли свободно перемещаться, что улучшает циркуляцию воздуха и уменьшает образование складок.</li>
+					<li>
+						Добавьте шерстяные шарики: Использование шариков для сушки ускоряет процесс, улучшает распределение тепла и предотвращает слипание тканей.
+					</li>
+				</random>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в духовке разрешена">
+		<category>
+			<pattern>* ЕЩЕ</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в духовке разрешена">
+		<category>
+			<pattern> ЕЩЕ *</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в духовке разрешена">
+		<category>
+			<pattern>* ЕЩЕ *</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+	</topic>
+
+
+	<!-- ВОПРОСЫ ПРО "Стирка в машине запрещена" -->
+	<category>
+		<pattern>стирка в машине запрещена</pattern>
+		<template>
+			Этот символ выглядит как перечеркнутый таз с водой.
+			<random>
+				<li> Перечёркнутый тазик с водой: Этот символ указывает, что стирка в стиральной машине недопустима, так как материал может быть слишком деликатным или чувствительным к механическому воздействию.</li>
+				<li>Символ "стирка в машине запрещена" на бирке с одеждой обычно указывает на то, ткань требует ручной стирки или химчистки: Одежда с таким символом обычно нуждается в особом уходе, например, ручной стирке при низкой температуре или профессиональной обработке в химчистке. </li>
+			</random>
+			<think>
+				<set name="topic">стирка в машине запрещена</set>
+			</think>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* не стирать *</pattern>
+		<template>
+			<srai>стирка в машине запрещена</srai>
+		</template>
+	</category>
+
+
+	<category>
+		<pattern>* не стирать </pattern>
+		<template>
+			<srai>стирка в машине запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>не стирать</pattern>
+		<template>
+			<srai>стирка в машине запрещена</srai>
+		</template>
+	</category>
+
+
+	<category>
+		<pattern>не стирать *</pattern>
+		<template>
+			<srai>стирка в машине запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* стирка в машине запрещена</pattern>
+		<template>
+			<srai>стирка в машине запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* стирка в машине запрещена *</pattern>
+		<template>
+			<srai>стирка в машине запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>стирка в машине запрещена *</pattern>
+		<template>
+			<srai>стирка в машине запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>стирать нельзя</pattern>
+		<template>
+			<srai>стирка в машине запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* стирать нельзя</pattern>
+		<template>
+			<srai>стирка в машине запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>стирать нельзя *</pattern>
+		<template>
+			<srai>стирка в машине запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* стирать нельзя *</pattern>
+		<template>
+			<srai>стирка в машине запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* стирка запрещена</pattern>
+		<template>
+			<srai>стирка в машине запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* стирка запрещена *</pattern>
+		<template>
+			<srai>стирка в машине запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>стирка запрещена *</pattern>
+		<template>
+			<srai>стирка в машине запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>стирка запрещена</pattern>
+		<template>
+			<srai>стирка в машине запрещена</srai>
+		</template>
+	</category>
+
+	<topic name="стирка в машине запрещена">
+		<category>
+			<pattern>опиши</pattern>
+			<template>
+				<srai>стирка в машине запрещена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="стирка в машине запрещена">
+		<category>
+			<pattern>опиши *</pattern>
+			<template>
+				<srai>стирка в машине запрещена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="стирка в машине запрещена">
+		<category>
+			<pattern>* опиши</pattern>
+			<template>
+				<srai>стирка в машине запрещена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="стирка в машине запрещена">
+		<category>
+			<pattern>* опиши *</pattern>
+			<template>
+				<srai>стирка в машине запрещена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="стирка в машине запрещена">
+		<category>
+			<pattern>как выглядит</pattern>
+			<template>
+				<srai>стирка в машине запрещена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="стирка в машине запрещена">
+		<category>
+			<pattern>как выглядит *</pattern>
+			<template>
+				<srai>стирка в машине запрещена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="стирка в машине запрещена">
+		<category>
+			<pattern>* как выглядит</pattern>
+			<template>
+				<srai>стирка в машине запрещена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="стирка в машине запрещена">
+		<category>
+			<pattern>* как выглядит *</pattern>
+			<template>
+				<srai>стирка в машине запрещена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="стирка в машине запрещена">
+		<category>
+			<pattern>ЕЩЕ</pattern>
+			<template>
+				<random>
+					<li>
+						Стирайте вручную: Используйте мягкое моющее средство и тёплую (но не горячую) воду. Аккуратно стирайте ткань, избегая сильного трения и выкручивания.
+					</li>
+					<li>
+						Проверьте возможность химчистки: Если ткань очень чувствительная или сложно стираемая, отнесите её в химчистку, чтобы избежать повреждений.
+					</li>
+					<li>
+						Сушите естественным образом: После стирки аккуратно выжмите воду, не выкручивая вещь, и положите её на ровную поверхность, чтобы она высохла, сохранив свою форму.
+					</li>
+				</random>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="стирка в машине запрещена">
+		<category>
+			<pattern>* ЕЩЕ</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="стирка в машине запрещена">
+		<category>
+			<pattern> ЕЩЕ *</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="стирка в машине запрещена">
+		<category>
+			<pattern>* ЕЩЕ *</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+	</topic>
+
+
+
+	<!-- ВОПРОСЫ ПРО "СУШКА В СТИРАЛЬНОЙ МАШИНЕ ЗАПРЕЩЕНА" -->
+	<category>
+		<pattern>сушка в стиральной машине запрещена</pattern>
+		<template>
+			Перечёркнутый квадрат с кругом:
+			<random>
+				<li>Перечёркнутый квадрат с кругом: Этот символ означает, что вещь нельзя сушить в барабанной сушилке. Ткань может быть слишком деликатной или чувствительной к высокой температуре и механическому воздействию.</li>
+				<li>
+					Символ "сушка в стиральной машине запрещена" на бирке с одеждой обычно указывает на то, что данную одежду нельзя сушить в стиральной машине.
+				</li>
+			</random>
+			<think>
+				<set name="topic">сушка в стиральной машине запрещена</set>
+			</think>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* сушка в стиральной машине запрещена *</pattern>
+		<template>
+			<srai>сушка в стиральной машине запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* сушка в стиральной машине запрещена </pattern>
+		<template>
+			<srai>сушка в стиральной машине запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>сушка в стиральной машине запрещена *</pattern>
+		<template>
+			<srai>сушка в стиральной машине запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>нельзя сушить в стиральной машине</pattern>
+		<template>
+			<srai>сушка в стиральной машине запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* нельзя сушить в стиральной машине</pattern>
+		<template>
+			<srai>сушка в стиральной машине запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>нельзя сушить в стиральной машине *</pattern>
+		<template>
+			<srai>сушка в стиральной машине запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* нельзя сушить в стиральной машине *</pattern>
+		<template>
+			<srai>сушка в стиральной машине запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* нельзя сушить в стиральной машине *</pattern>
+		<template>
+			<srai>сушка в стиральной машине запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* нельзя сушить в стиральной машине </pattern>
+		<template>
+			<srai>сушка в стиральной машине запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern> нельзя сушить в стиральной машине *</pattern>
+		<template>
+			<srai>сушка в стиральной машине запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>нельзя сушить в стиральной машине</pattern>
+		<template>
+			<srai>сушка в стиральной машине запрещена</srai>
+		</template>
+	</category>
+
+	<topic name="сушка в стиральной машине запрещена">
+		<category>
+			<pattern>опиши</pattern>
+			<template>
+				<srai>сушка в стиральной машине запрещена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в стиральной машине запрещена">
+		<category>
+			<pattern>опиши *</pattern>
+			<template>
+				<srai>сушка в стиральной машине запрещена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в стиральной машине запрещена">
+		<category>
+			<pattern>* опиши</pattern>
+			<template>
+				<srai>сушка в стиральной машине запрещена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в стиральной машине запрещена">
+		<category>
+			<pattern>* опиши *</pattern>
+			<template>
+				<srai>сушка в стиральной машине запрещена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в стиральной машине запрещена">
+		<category>
+			<pattern>как выглядит</pattern>
+			<template>
+				<srai>сушка в стиральной машине запрещена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в стиральной машине запрещена">
+		<category>
+			<pattern>как выглядит *</pattern>
+			<template>
+				<srai>сушка в стиральной машине запрещена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в стиральной машине запрещена">
+		<category>
+			<pattern>* как выглядит</pattern>
+			<template>
+				<srai>сушка в стиральной машине запрещена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в стиральной машине запрещена">
+		<category>
+			<pattern>* как выглядит *</pattern>
+			<template>
+				<srai>сушка в стиральной машине запрещена</srai>
+			</template>
+		</category>
+	</topic>
+
+
+	<topic name="сушка в стиральной машине запрещена">
+		<category>
+			<pattern>ЕЩЕ</pattern>
+			<template>
+				<random>
+					<li>
+						Этот символ указывает на то, что лучше сушить одужду на воздухе: Развесьте вещь на сушилке или повесьте на плечики в хорошо проветриваемом помещении, избегая прямого солнечного света, чтобы сохранить цвет.
+					</li>
+					<li>
+						Совет: Используйте горизонтальную сушку: Для деликатных или тяжелых вещей, таких как шерстяные свитера, сушите их на ровной поверхности, чтобы избежать растяжения.
+					</li>
+					<li>
+						Напоминание: Избегайте прямого тепла: Не сушите одежду на радиаторах или обогревателях, так как это может привести к деформации или повреждению ткани.
+					</li>
+				</random>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в стиральной машине запрещена">
+		<category>
+			<pattern>* ЕЩЕ</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сушка в стиральной машине запрещена">
+		<category>
+			<pattern> ЕЩЕ *</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+
+	</topic>
+	<topic name="сушка в стиральной машине запрещена">
+		<category>
+			<pattern>* ЕЩЕ *</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+	</topic>
+
+
+	<!-- ВОПРОСЫ ПРО "СУХОЙ РАСПРЕДЕЛИТЕЛЬ" -->
+	<category>
+		<pattern>сухой распределитель</pattern>
+		<template>
+			Квадрат с тремя полосами внутри:
+			<random>
+				<li>Квадрат с тремя полосами внутри: Этот символ обозначает, что отжим в стиральной машине запрещён. Он часто используется для деликатных тканей, которые могут потерять форму или повредиться из-за интенсивного вращения.</li>
+				<li>
+					Этот символ исключает механическое воздействие: Отсутствие отжима помогает избежать растяжения, усадки или повреждения волокон ткани. Это особенно важно для шерсти, шелка и кружев.
+				</li>
+			</random>
+			<think>
+				<set name="topic">сухой распределитель</set>
+			</think>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* сухой распределитель *</pattern>
+		<template>
+			<srai>сухой распределитель</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* сухой распределитель </pattern>
+		<template>
+			<srai>сухой распределитель</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>сухой распределитель *</pattern>
+		<template>
+			<srai>сухой распределитель</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>вертикальная сушка</pattern>
+		<template>
+			<srai>сухой распределитель</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* вертикальная сушка</pattern>
+		<template>
+			<srai>сухой распределитель</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>вертикальная сушка *</pattern>
+		<template>
+			<srai>сухой распределитель</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* вертикальная сушка *</pattern>
+		<template>
+			<srai>сухой распределитель</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* вертикальная сушка *</pattern>
+		<template>
+			<srai>сухой распределитель</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* вертикальная сушка </pattern>
+		<template>
+			<srai>сухой распределитель</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern> вертикальная сушка *</pattern>
+		<template>
+			<srai>сухой распределитель</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>вертикальная сушка</pattern>
+		<template>
+			<srai>сухой распределитель</srai>
+		</template>
+	</category>
+
+	<topic name="сухой распределитель">
+		<category>
+			<pattern>опиши</pattern>
+			<template>
+				<srai>сухой распределитель</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сухой распределитель">
+		<category>
+			<pattern>опиши *</pattern>
+			<template>
+				<srai>сухой распределитель</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сухой распределитель">
+		<category>
+			<pattern>* опиши</pattern>
+			<template>
+				<srai>сухой распределитель</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сухой распределитель">
+		<category>
+			<pattern>* опиши *</pattern>
+			<template>
+				<srai>сухой распределитель</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сухой распределитель">
+		<category>
+			<pattern>как выглядит</pattern>
+			<template>
+				<srai>сухой распределитель</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сухой распределитель">
+		<category>
+			<pattern>как выглядит *</pattern>
+			<template>
+				<srai>сухой распределитель</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сухой распределитель">
+		<category>
+			<pattern>* как выглядит</pattern>
+			<template>
+				<srai>сухой распределитель</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сухой распределитель">
+		<category>
+			<pattern>* как выглядит *</pattern>
+			<template>
+				<srai>сухой распределитель</srai>
+			</template>
+		</category>
+	</topic>
+
+
+	<topic name="сухой распределитель">
+		<category>
+			<pattern>ЕЩЕ</pattern>
+			<template>
+				<random>
+					<li>
+						Аккуратно отжимайте вручную: После стирки заверните вещь в сухое полотенце и мягко нажимайте, чтобы удалить излишки воды. Не выкручивайте ткань, чтобы не повредить её.
+					</li>
+					<li>
+						Совет: Избегайте прямого солнечного света: Для сохранения цвета и текстуры ткани сушите вещи в тени или в хорошо проветриваемом помещении.
+					</li>
+				</random>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сухой распределитель">
+		<category>
+			<pattern>* ЕЩЕ</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="сухой распределитель">
+		<category>
+			<pattern> ЕЩЕ *</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+
+	</topic>
+	<topic name="сухой распределитель">
+		<category>
+			<pattern>* ЕЩЕ *</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+	</topic>
+
+	<!-- ВОПРОСЫ ПРО "ГЛАЖКА ДО ТЕМПЕРАТУРЫ 110 ГРАДУСОВ" -->
+	<category>
+		<pattern>Глажка до температуры 110 градусов</pattern>
+		<template>
+			Утюг с точкой внутри:
+			<random>
+				<li>Этот символ указывает, что вещь можно гладить с использованием низкой температуры (не выше 110 градусов Цельсия), что обычно подходит для деликатных тканей, таких как синтетика, нейлон или акрил.</li>
+				<li>
+					Универсальность для тканей: Этот символ встречается на многих синтетических и смесовых тканях, которые не требуют высоких температур для глажки.
+				</li>
+			</random>
+			<think>
+				<set name="topic">Глажка до температуры 110 градусов</set>
+			</think>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* глажка до температуры 110 градусов *</pattern>
+		<template>
+			<srai>Глажка до температуры 110 градусов</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* глажка до температуры 110 градусов </pattern>
+		<template>
+			<srai>Глажка до температуры 110 градусов</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>глажка до температуры 110 градусов *</pattern>
+		<template>
+			<srai>Глажка до температуры 110 градусов</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>бережная глажка</pattern>
+		<template>
+			<srai>Глажка до температуры 110 градусов</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* бережная глажка</pattern>
+		<template>
+			<srai>Глажка до температуры 110 градусов</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>бережная глажка *</pattern>
+		<template>
+			<srai>Глажка до температуры 110 градусов</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* бережная глажка *</pattern>
+		<template>
+			<srai>Глажка до температуры 110 градусов</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* аккуратная глажка *</pattern>
+		<template>
+			<srai>Глажка до температуры 110 градусов</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* аккуратная глажка </pattern>
+		<template>
+			<srai>Глажка до температуры 110 градусов</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern> аккуратная глажка *</pattern>
+		<template>
+			<srai>Глажка до температуры 110 градусов</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>аккуратная глажка</pattern>
+		<template>
+			<srai>Глажка до температуры 110 градусов</srai>
+		</template>
+	</category>
+
+	<topic name="Глажка до температуры 110 градусов">
+		<category>
+			<pattern>опиши</pattern>
+			<template>
+				<srai>Глажка до температуры 110 градусов</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Глажка до температуры 110 градусов">
+		<category>
+			<pattern>опиши *</pattern>
+			<template>
+				<srai>Глажка до температуры 110 градусов</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Глажка до температуры 110 градусов">
+		<category>
+			<pattern>* опиши</pattern>
+			<template>
+				<srai>Глажка до температуры 110 градусов</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Глажка до температуры 110 градусов">
+		<category>
+			<pattern>* опиши *</pattern>
+			<template>
+				<srai>Глажка до температуры 110 градусов</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Глажка до температуры 110 градусов">
+		<category>
+			<pattern>как выглядит</pattern>
+			<template>
+				<srai>Глажка до температуры 110 градусов</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Глажка до температуры 110 градусов">
+		<category>
+			<pattern>как выглядит *</pattern>
+			<template>
+				<srai>Глажка до температуры 110 градусов</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Глажка до температуры 110 градусов">
+		<category>
+			<pattern>* как выглядит</pattern>
+			<template>
+				<srai>Глажка до температуры 110 градусов</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Глажка до температуры 110 градусов">
+		<category>
+			<pattern>* как выглядит *</pattern>
+			<template>
+				<srai>Глажка до температуры 110 градусов</srai>
+			</template>
+		</category>
+	</topic>
+
+
+	<topic name="Глажка до температуры 110 градусов">
+		<category>
+			<pattern>ЕЩЕ</pattern>
+			<template>
+				<random>
+					<li>
+						Совет :Используйте утюг с регулируемой температурой: Убедитесь, что ваш утюг позволяет точно настроить температуру, чтобы избежать перегрева.
+					</li>
+					<li>
+						Совет: Гладьте с изнаночной стороны: Это поможет избежать блеска или повреждения деликатных тканей, таких как полиэстер или нейлон.
+					</li>
+					<li>
+						Напоминание: Применяйте пар: Пар поможет разгладить складки без перегрева ткани, сохраняя её в хорошем состоянии.
+					</li>
+				</random>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Глажка до температуры 110 градусов">
+		<category>
+			<pattern>* ЕЩЕ</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Глажка до температуры 110 градусов">
+		<category>
+			<pattern> ЕЩЕ *</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+
+	</topic>
+	<topic name="Глажка до температуры 110 градусов">
+		<category>
+			<pattern>* ЕЩЕ *</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+	</topic>
+
+	<!-- ВОПРОСЫ ПРО "ГЛАЖКА ЗАПРЕЩЕНА" -->
+	<category>
+		<pattern>Глажка запрещена</pattern>
+		<template>
+			Перечеркнутый утюг:
+			<random>
+				<li>Перечёркнутый утюг: Этот символ указывает, что вещь нельзя гладить, так как ткань может повредиться при высоких температурах. Это часто касается деликатных материалов, таких как шелк, шерсть, или ткани с декоративными элементами.</li>
+				<li>
+					Этот символ часто используется для материалов с водоотталкивающими покрытиями: Некоторые ткани, такие как куртки с мембранами или синтетические материалы, могут быть повреждены при глажении, что приводит к утрате их функциональных свойств.
+				</li>
+			</random>
+			<think>
+				<set name="topic">Глажка запрещена</set>
+			</think>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* Глажка запрещена *</pattern>
+		<template>
+			<srai>Глажка запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* Глажка запрещена </pattern>
+		<template>
+			<srai>Глажка запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Глажка запрещена *</pattern>
+		<template>
+			<srai>Глажка запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>нельзя гладить</pattern>
+		<template>
+			<srai>Глажка запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* нельзя гладить</pattern>
+		<template>
+			<srai>Глажка запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>нельзя гладить *</pattern>
+		<template>
+			<srai>Глажка запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* нельзя гладить *</pattern>
+		<template>
+			<srai>Глажка запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* гладить запрещеноь *</pattern>
+		<template>
+			<srai>Глажка запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* гладить запрещено </pattern>
+		<template>
+			<srai>Глажка запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern> гладить запрещено *</pattern>
+		<template>
+			<srai>Глажка запрещена</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>гладить запрещено</pattern>
+		<template>
+			<srai>Глажка запрещена</srai>
+		</template>
+	</category>
+
+	<topic name="Глажка запрещена">
+		<category>
+			<pattern>опиши</pattern>
+			<template>
+				<srai>Глажка запрещена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Глажка запрещена">
+		<category>
+			<pattern>опиши *</pattern>
+			<template>
+				<srai>Глажка запрещена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Глажка запрещена">
+		<category>
+			<pattern>* опиши</pattern>
+			<template>
+				<srai>Глажка запрещена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Глажка запрещена">
+		<category>
+			<pattern>* опиши *</pattern>
+			<template>
+				<srai>Глажка запрещена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Глажка запрещена">
+		<category>
+			<pattern>как выглядит</pattern>
+			<template>
+				<srai>Глажка запрещена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Глажка запрещена">
+		<category>
+			<pattern>как выглядит *</pattern>
+			<template>
+				<srai>Глажка запрещена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Глажка запрещена">
+		<category>
+			<pattern>* как выглядит</pattern>
+			<template>
+				<srai>Глажка запрещена</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Глажка запрещена">
+		<category>
+			<pattern>* как выглядит *</pattern>
+			<template>
+				<srai>Глажка запрещена</srai>
+			</template>
+		</category>
+	</topic>
+
+
+	<topic name="Глажка запрещена">
+		<category>
+			<pattern>ЕЩЕ</pattern>
+			<template>
+				<random>
+					<li>
+						Избегайте воздействия высоких температур: Не используйте утюг, чтобы не повредить ткань. Для разглаживания складок лучше воспользоваться паром на расстоянии.
+					</li>
+					<li>
+						Совет: Используйте альтернативные методы разглаживания: Для деликатных тканей можно использовать паровой отпариватель, который помогает разгладить вещи без контакта с горячей поверхностью.
+					</li>
+					<li>
+						Совет: Оставьте одежду в ванной: После душа или ванны в помещении с паром ткани разглаживаются естественным образом, что позволяет избежать использования утюга.
+					</li>
+				</random>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Глажка запрещена">
+		<category>
+			<pattern>* ЕЩЕ</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+	</topic>
+
+	<topic name="Глажка запрещена">
+		<category>
+			<pattern> ЕЩЕ *</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+
+	</topic>
+	<topic name="Глажка запрещена">
+		<category>
+			<pattern>* ЕЩЕ *</pattern>
+			<template>
+				<srai>ЕЩЕ</srai>
+			</template>
+		</category>
+	</topic>
+
+
+
+
+
+	<!-- Общий рассказ об уходе за одеждой -->
+	<category>
+		<pattern>уход за одеждой</pattern>
+		<template>
+			<random>
+				<li>Правильный уход за одеждой помогает сохранить ее первозданный вид и увеличить срок службы. Важно соблюдать рекомендации по стирке, глажке и сушке в соответствии с инструкциями на бирке. Кроме того, следует избегать использования агрессивных отбеливателей и соблюдать особые условия для чувствительных тканей.</li>
+				<li>Уделяйте внимание уходу за своей одеждой, чтобы она всегда выглядела наилучшим образом. Выбирайте правильные режимы стирки, следите за температурой, и при необходимости используйте деликатные средства для стирки. Также учитывайте рекомендации по глажке и сушке на бирке, чтобы избежать потери формы и цвета.</li>
+				<li>Не забывайте о правильном хранении вашей одежды. Избегайте длительного воздействия прямых солнечных лучей, храните ее в прохладном и сухом месте. Такие заботливые меры помогут сохранить яркость и красоту ваших вещей.</li>
+				<li>При выборе средств для стирки обращайте внимание на их состав, чтобы избежать воздействия агрессивных химических компонентов на ткани. Это особенно важно для сохранения качества и цвета вашей одежды.</li>
+				<li>Периодически проверяйте бирку на вашей одежде, чтобы удостовериться, что вы следуете рекомендациям производителя по уходу за каждым конкретным предметом.</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* уходе *</pattern>
+		<template>
+			<srai>уход за одеждой</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* уходе </pattern>
+		<template>
+			Возможно , вы имели ввиду уход за одеждой.
+			<srai>уход за одеждой</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>уходе *</pattern>
+		<template>
+			Возможно , вы имели ввиду уход за одеждой.
+			<srai>уход за одеждой</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* уход *</pattern>
+		<template>
+			Возможно , вы имели ввиду уход за одеждой.
+			<srai>уход за одеждой</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* уход </pattern>
+		<template>
+			Возможно , вы имели ввиду уход за одеждой.
+			<srai>уход за одеждой</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern> уход *</pattern>
+		<template>
+			Возможно , вы имели ввиду уход за одеждой.
+			<srai>уход за одеждой</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>уход</pattern>
+		<template>
+			Возможно , вы имели ввиду уход за одеждой.
+			<srai>уход за одеждой</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* ухаживать *</pattern>
+		<template>
+			Возможно , вы имели ввиду уход за одеждой.
+			<srai>уход за одеждой</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* ухаживать </pattern>
+		<template>
+			Возможно , вы имели ввиду уход за одеждой.
+			<srai>уход за одеждой</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern> ухаживать *</pattern>
+		<template>
+			Возможно , вы имели ввиду уход за одеждой.
+			<srai>уход за одеждой</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ухаживать</pattern>
+		<template>
+			Возможно , вы имели ввиду уход за одеждой.
+			<srai>уход за одеждой</srai>
+		</template>
+	</category>
+
+
+	<!-- ИНТЕРЕСНЫЕ ФАКТЫ -->
+	<category>
+		<pattern>интересные факты</pattern>
+		<template>
+			<random>
+				<li>Первая стиральная машина: Первая механическая стиральная машина была изобретена в 1851 году американцем Джеймсом Кингом. Но её конструкция была далеко не такой эффективной, как современные стиралки. Первые машины работали на ручном приводе, и их использование требовало значительных усилий.</li>
+				<li>Ручная стирка была нормой до 20 века: До изобретения стиральных машин большинство людей стирали вручную, используя доски для стирки, которые были особенно популярны в XIX веке. Даже после появления машин процесс стирки оставался трудозатратным.</li>
+				<li>Символы для стирки появились в 1958 году: Стандартные символы ухода за одеждой были разработаны Международной организацией по стандартизации (ISO) в 1958 году, чтобы упростить процесс ухода за одеждой и избежать недоразумений, особенно при международной продаже товаров.</li>
+				<li>Утюг для глажки: Символ утюга с одной, двумя или тремя точками внутри указывает, при какой температуре нужно гладить вещь. Одна точка — низкая температура (110°C), две точки — средняя (150°C), три точки — высокая (200°C).</li>
+				<li>Моющее средство для стирки: В 1940-х годах в США было изобретено порошковое моющее средство, которое положило начало массовому производству стиральных средств. Сегодня существуют различные формулы для стирки, включая порошки, гели и капсулы, которые оптимизированы для разных типов тканей.</li>
+				<li>Лаванда в стирке: Лаванда не только придает приятный аромат, но и известна своими антисептическими свойствами. В некоторых культурах лавандовые мешочки использовались для дезинфекции и предотвращения появления плесени на одежде.</li>
+				<li>Отбеливатели: Хлорный отбеливатель был изобретен в 1785 году и первоначально использовался для чистки тканей и дезинфекции. Однако он был очень агрессивным, и только в 20 веке появились более безопасные для ткани отбеливатели.</li>
+				<li>Мельница для стирки: В XVIII-XIX веках в Англии и других странах Европы были популярны «стиральные мельницы», которые использовались для массовой стирки белья и тканей. Эти устройства сочетали водяную мельницу и оборудование для стирки, значительно ускоряя процесс.</li>
+				<li>Как сушить одежду: Сушить одежду на прямом солнце может привести к выцветанию цветов, особенно у ярких тканей. Чтобы сохранить яркость, рекомендуется сушить вещи в тени или в помещении с хорошей циркуляцией воздуха.</li>
+				<li>Гладить или не гладить? Некоторые ткани, например, полиэстер, не требуют глажки, так как они быстро восстанавливают форму после стирки. В то время как другие ткани, такие как хлопок или лен, требуют тщательной глажки для сохранения своей структуры и внешнего вида.</li>
+				<li>Символ "нельзя стирать" (изображение перекрещенного ведра) указывает на то, что данную одежду нельзя стирать в машине, и для ее очистки следует использовать химчистку.</li>
+				<li>Символ "можно сушить" (изображение квадрат) указывает, что одежду можно сушить в сушилке, а дополнительные точки или круги могут указывать на разные режимы сушки.</li>
+				<li>Символ "разрешена машинная сушка" (изображение квадрата с круглым символом машины) показывает, что одежду можно сушить в машине для сушки.</li>
+				<li>Символ "можно гладить" (изображение утюга) обозначает, что данную одежду можно гладить, а точки вокруг утюга могут указывать на разные температурные режимы.</li>
+				<li>Символ "можно отбеливать" (изображение треугольника) указывает на то, что использование отбеливателя разрешено при стирке.</li>
+				<li>Символ "нельзя отбеливать" (изображение перекрещенного треугольника) предупреждает, что отбеливание не рекомендуется для этой одежды.</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* факты *</pattern>
+		<template>
+			<srai>интересные факты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* факт *</pattern>
+		<template>
+			<srai>интересные факты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>факт</pattern>
+		<template>
+			<srai>интересные факты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>факты</pattern>
+		<template>
+			<srai>интересные факты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* факт</pattern>
+		<template>
+			<srai>интересные факты</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* факты</pattern>
+		<template>
+			<srai>интересные факты</srai>
+		</template>
+	</category>
+
+
+	<category>
+		<pattern>факт *</pattern>
+		<template>
+			<srai>интересные факты</srai>
+		</template>
+	</category>
+
+
+	<category>
+		<pattern>факты *</pattern>
+		<template>
+			<srai>интересные факты</srai>
+		</template>
+	</category>
+
+	<!-- ВОПРОСЫ ПРО ФОТО -->
+
+	<category>
+		<pattern>фото</pattern>
+		<template>
+			<random>
+				<li>Да, конечно, я могу распознать символ по фото. Будь я не Washing Machine Heart бот если я не справлюсь!!!</li>
+				<li>Да, конечно, моя создательница сошла с ума пока пыталась реализовать распорзнавание символов по фото и сейчас находится в Ковалевке, но зато я умею это делать лучше всех!</li>
+			</random>
+			Если хотите узнать, какие символы я могу распознать, напишите "символы".
+		</template>
+	</category>
+
+	<category>
+		<pattern>* фото *</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* фото </pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>фото *</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* фотке *</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* фотке </pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern> фотке *</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>фотке</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* фотку *</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* фотку </pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern> фотку *</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* картинка *</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* картинка </pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern> картинка *</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* картинку *</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* картинку </pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern> картинку *</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* картинке *</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>картинке *</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* картинке </pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* изображение *</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* изображение </pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern> изображение *</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* изображению *</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* изображению </pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern> изображению *</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* фотография *</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* фотография </pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern> фотография *</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* фотографии *</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* фотографии </pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern> фотографии *</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* фотографию *</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* фотографию </pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern> фотографию *</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* рисунок *</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* рисунок </pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern> рисунок *</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* рисунку *</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* рисунку </pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern> рисунку *</pattern>
+		<template>
+			<srai>фото</srai>
+		</template>
+	</category>
+
+	<!-- КАК ДЕЛА -->
+
+	<category>
+		<pattern>* как дела</pattern>
+		<template>
+			<srai>как дела</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* как дела *</pattern>
+		<template>
+			<srai>как дела</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>как дела *</pattern>
+		<template>
+			<srai>как дела</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* как жизнь</pattern>
+		<template>
+			<srai>как дела</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>как жизнь</pattern>
+		<template>
+			<srai>как дела</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>как жизнь *</pattern>
+		<template>
+			<srai>как дела</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* как жизнь *</pattern>
+		<template>
+			<srai>как дела</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>как ты *</pattern>
+		<template>
+			<srai>как дела</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* как ты</pattern>
+		<template>
+			<srai>как дела</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* как ты *</pattern>
+		<template>
+			<srai>как дела</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>как ты</pattern>
+		<template>
+			<srai>как дела</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>как поживаешь *</pattern>
+		<template>
+			<srai>как дела</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* как поживаешь</pattern>
+		<template>
+			<srai>как дела</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>как поживаешь</pattern>
+		<template>
+			<srai>как дела</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* как поживаешь *</pattern>
+		<template>
+			<srai>как дела</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>как дела</pattern>
+		<template>
+			<random>
+				<li>Пока не родила, ха-ха, я же робот, я не умею рожать и шутить.</li>
+				<li>Лучше некуда! Жду не дождусь ваших вопросов по уходу за оденждой!</li>
+				<li>Чудесно! Нахожусь в ожидании ваших вопросов</li>
+				<li>Замечательно! Надеюсь вы в настроении поговорить о символах по уходу за одеждой!</li>
+				<li>Настроение боевое! Готов помочь вам в ваших вопросах об уходе за одеждой!</li>
+				<li>
+					Лучше некуда! А как иначе, ведь я самый полезный на свете бот об уходе за одеждой!
+				</li>
+			</random>
+		</template>
+	</category>
+
+
+	<category>
+		<pattern>Аудио</pattern>
+		<template>Я был бы рад услышать ваш чудный голос, но я не умею слушать :(</template>
+	</category>
+	<category>
+		<pattern>Видео</pattern>
+		<template>Я был бы рад посмотреть это видео, но у меня нет глаз :(</template>
+	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<template>
+			Я всего лишь глупый бот :( 
+			<random>
+				<li>
+					Прошу прощения, ,<get name="user-name"/>, но я не располагаю информацией по этому вопросу. Расскажите мне, какой символ по уходу за одеждой вас интересует. Список символов можно получить по запросу "символы".
+				</li>
+				<li>Мне не известно об этом. Может быть, вы хотели бы узнать что-то об уходе за одеждой? Или, возможно, о символах на бирке? Просто напишите тему, которая вас интересует. Список символов можно получить по запросу "символы".</li>
+				<li>Извините, но у меня нет ответа на этот вопрос. Давайте переключимся на тему ухода за одеждой. Есть что-то конкретное, что вы хотели бы узнать?</li>
+				<li>
+					Кажется, этот вопрос выходит за пределы моих текущих знаний. Может быть вы хотите узнать какой-то факт об уходе за одеждой <get name="user-name"/>? Просто попросите меня рассказать факт.
+				</li>
+				<li>
+					К сожалению, я не смогу поговорить с вами об этом,<get name="user-name"/>. Но вы можете написать мне "факт" и я смогу вас удивить!
+				</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>?</pattern>
+		<template>
+			<srai>*</srai>
+		</template>
+	</category>
+
+
+	<category>
+		<pattern>У МЕНЯ ЕСТЬ ВОПРОС</pattern>
+		<template>Мои aiml ушки на моей aiml макушке, ха-ха. Кхм... Слушаю ваш вопрос.</template>
+	</category>
+
+	<category>
+		<pattern>* ЕСТЬ ВОПРОС</pattern>
+		<template>
+			<srai>У МЕНЯ ЕСТЬ ВОПРОС</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* ЕСТЬ ВОПРОС *</pattern>
+		<template>
+			<srai>У МЕНЯ ЕСТЬ ВОПРОС</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ЕСТЬ ВОПРОС *</pattern>
+		<template>
+			<srai>У МЕНЯ ЕСТЬ ВОПРОС</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ЕСТЬ ВОПРОС</pattern>
+		<template>
+			<srai>У МЕНЯ ЕСТЬ ВОПРОС</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ОТВЕТЬ</pattern>
+		<template>
+			<srai>У МЕНЯ ЕСТЬ ВОПРОС</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* ОТВЕТЬ *</pattern>
+		<template>
+			<srai>У МЕНЯ ЕСТЬ ВОПРОС</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* ОТВЕТЬ</pattern>
+		<template>
+			<srai>У МЕНЯ ЕСТЬ ВОПРОС</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ОТВЕТЬ *</pattern>
+		<template>
+			<srai>У МЕНЯ ЕСТЬ ВОПРОС</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* ОТВЕТ</pattern>
+		<template>
+			<srai>У МЕНЯ ЕСТЬ ВОПРОС</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* ОТВЕТ *</pattern>
+		<template>
+			<srai>У МЕНЯ ЕСТЬ ВОПРОС</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ОТВЕТ *</pattern>
+		<template>
+			<srai>У МЕНЯ ЕСТЬ ВОПРОС</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* ОТВЕТИТЬ</pattern>
+		<template>
+			<srai>У МЕНЯ ЕСТЬ ВОПРОС</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* ОТВЕТИТЬ *</pattern>
+		<template>
+			<srai>У МЕНЯ ЕСТЬ ВОПРОС</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ОТВЕТИТЬ *</pattern>
+		<template>
+			<srai>У МЕНЯ ЕСТЬ ВОПРОС</srai>
+		</template>
+	</category>
+
+
+
+</aiml>
